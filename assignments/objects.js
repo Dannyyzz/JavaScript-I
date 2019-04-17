@@ -11,70 +11,80 @@
 
 // Example format of an intern object: 1,examples@you.edu,Example,F
 const example = {
-  "id": 0,
-  "name": "Example",
-  "email": "examples@you.edu",
-  "gender": "F"
+  id: 0,
+  name: "Example",
+  email: "examples@you.edu",
+  gender: "F"
 }
 
 // Write your intern objects here:
 
 const firstintern = {
-  "id": 1,
-  "name": "Mitzi",
-  "email": "mmelloy0@psu.edu",
-  "gender": "F"
+  id: 1,
+  name: "Mitzi",
+  email: "mmelloy0@psu.edu",
+  gender: "F"
 }
 
 const secondintern = {
-  "id": 2,
-  "name": "Kennan",
-  "email": "kdiben1@tinypic.com",
-  "gender": "M"
+  id: 2,
+  name: "Kennan",
+  email: "kdiben1@tinypic.com",
+  gender: "M",
+  speak: function() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
 }
 
 const thirdintern = {
-  "id": 3,
-  "name": "Keven",
-  "email": "kmummery2@wikimedia.org",
-  "gender": "M"
+  id: 3,
+  name: "Keven",
+  email: "kmummery2@wikimedia.org",
+  gender: "M"
 }
 
 const fourthintern = {
-  "id": 4,
-  "name": "Gannie",
-  "email": "gmartinson3@illinois.edu",
-  "gender": "M"
+  id: 4,
+  name: "Gannie",
+  email: "gmartinson3@illinois.edu",
+  gender: "M"
 }
 
 const fifthintern = {
-  "id": 5,
-  "name": "Antonietta",
-  "email": "adaine5@samsung.com",
-  "gender": "F"
+  id: 5,
+  name: "Antonietta",
+  email: "adaine5@samsung.com",
+  gender: "F"
 }
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-// console.log(firstintern["name"]);
+
+ console.log(firstintern.name);
 
 // Kennan's ID
-// console.log(secondintern["id"]);
+
+ console.log(secondintern.id);
 
 // Keven's email
-// console.log(thirdintern["email"]);
+
+ console.log(thirdintern.email);
 
 // Gannie's name
-// console.log(fourthintern["name"]);
+
+ console.log(fourthintern.name);
 
 // Antonietta's Gender
-// console.log(fifthintern["gender"]);
+
+ console.log(fifthintern.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
+
+// secondintern.speak((name));
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
