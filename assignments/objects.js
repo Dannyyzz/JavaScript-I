@@ -32,7 +32,7 @@ const secondintern = {
   email: "kdiben1@tinypic.com",
   gender: "M",
   speak: function() {
-    console.log(`Hello, my name is ${this.name}`);
+    return `Hello, my name is ${this.name}`;
   }
 }
 
@@ -54,7 +54,10 @@ const fifthintern = {
   id: 5,
   name: "Antonietta",
   email: "adaine5@samsung.com",
-  gender: "F"
+  gender: "F",
+  multiply: function(num1, num2) {
+    return num1 * num2;
+  }
 }
 
 // ==== Challenge 2: Reading Object Data ==== 
@@ -84,10 +87,12 @@ const fifthintern = {
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
-// secondintern.speak((name));
+ console.log(secondintern.speak(name));
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+ console.log(fifthintern.multiply(2,23));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
@@ -100,6 +105,10 @@ const fifthintern = {
 
 const parent = {}
 
+
+function newFunction() {
+  console.log;
+}
 // Log the parent object's name
 
 // Log the child's age
